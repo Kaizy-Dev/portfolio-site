@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">KAIZY / Gael Franco — Think and Make.</title>
+  <desc id="desc">A blue technical identity card for KAIZY, a young developer building practical software.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#07111f"/><stop offset="1" stop-color="#0c2a45"/></linearGradient>
+    <linearGradient id="line" x1="0" x2="1"><stop stop-color="#4ab6ff" stop-opacity=".15"/><stop offset=".5" stop-color="#72e7c1"/><stop offset="1" stop-color="#4ab6ff" stop-opacity=".15"/></linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity=".12" stroke="#a8d7e6"><path d="M0 90h1200M0 180h1200M0 270h1200M0 360h1200M0 450h1200M0 540h1200M100 0v630M200 0v630M300 0v630M400 0v630M500 0v630M600 0v630M700 0v630M800 0v630M900 0v630M1000 0v630M1100 0v630"/></g>
+  <path d="M600 540c160-70 120-190 264-237 85-28 150-64 260-167" fill="none" stroke="url(#line)" stroke-width="3"/>
+  <circle cx="600" cy="540" r="8" fill="#72e7c1"/><circle cx="1124" cy="136" r="10" fill="#72e7c1"/>
+  <g transform="translate(72 70)" fill="none" stroke="#dff7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><path d="M0 0v42M0 21h16M16 21 38 0M16 21l24 21"/><path d="M26 0h16v16" stroke="#72e7c1"/></g>
+  <text x="140" y="102" fill="#dff7ff" font-family="Arial, sans-serif" font-size="25" font-weight="700" letter-spacing="5">KAIZY / GAEL FRANCO</text>
+  <text x="72" y="300" fill="#dff7ff" font-family="Arial, sans-serif" font-size="108" font-weight="700">Think &amp;</text>
+  <text x="72" y="410" fill="#72e7c1" font-family="Arial, sans-serif" font-size="108" font-weight="700">Make.</text>
+  <text x="76" y="496" fill="#a8d7e6" font-family="Arial, sans-serif" font-size="22" letter-spacing="4">PERSONAL BUILD LOG / CURRENTLY STUDENT / FUTURE SOFTWARE ENGINEER</text>
+  <text x="76" y="570" fill="#72e7c1" font-family="monospace" font-size="15" letter-spacing="3">ROUTE LOCKED / DIRECTION CLEAR / 2026</text>
+</svg>

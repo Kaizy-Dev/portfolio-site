@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#07111f">
+    <meta name="description" content="KAIZY / Gael Franco is a student building practical software, browser experiments, and tools that keep getting pushed further.">
+    <meta name="author" content="Gael Franco">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="KAIZY — Think and Make.">
+    <meta property="og:description" content="A personal build log by Gael Franco: practical software, browser experiments, and the next thing to make.">
+    <meta property="og:image" content="/assets/og-card.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:url" content="/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KAIZY — Think and Make.">
+    <meta name="twitter:description" content="A personal build log by Gael Franco.">
+    <meta name="twitter:image" content="/assets/og-card.png">
+    <link rel="canonical" href="/">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/styles.css">
+    <title>KAIZY / Gael Franco — Think and Make.</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="site-shell">
+      <div class="top-progress" aria-hidden="true"><span id="scroll-progress"></span></div>
+      <header class="site-header" data-header>
+        <a class="brand" href="#top" aria-label="KAIZY home">
+          <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+            <path d="M7 7v26M7 20h10M17 20 30 7M17 20l14 13" />
+            <path class="brand-mark-accent" d="M23 7h10v10" />
+          </svg>
+          <span class="brand-word">KAIZY<span class="brand-slash">/</span></span>
+        </a>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="#work">Work <span>01</span></a>
+          <a href="#origin">Origin <span>02</span></a>
+          <a href="#flight-plan">Flight plan <span>03</span></a>
+        </nav>
+        <div class="header-actions">
+          <span class="signal-pill"><i aria-hidden="true"></i> Building in public</span>
+          <button class="icon-button menu-trigger" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-trigger>
+            <span class="sr-only">Open menu</span>
+            <span></span><span></span>
+          </button>
+          <button class="command-trigger" type="button" aria-haspopup="dialog" aria-controls="command-palette" data-command-open>
+            <span class="command-key">⌘</span><span>K</span>
+          </button>
+        </div>
+        <div class="mobile-menu" id="mobile-menu" hidden>
+          <a href="#work">01 / Work</a>
+          <a href="#origin">02 / Origin</a>
+          <a href="#flight-plan">03 / Flight plan</a>
+          <a href="#contact">04 / Contact</a>
+        </div>
+      </header>
+
+      <main id="main-content">
+        <section class="hero section-pad" id="top" aria-labelledby="hero-title">
+          <div class="hero-copy" data-reveal>
+            <p class="eyebrow"><span class="eyebrow-line"></span> Personal build log / 2026</p>
+            <p class="hero-name">KAIZY <span>/</span> Gael Franco</p>
+            <h1 id="hero-title">Think <em>&amp;</em><br><span>Make.</span></h1>
+            <p class="hero-intro">Currently a student, future Software Engineer.<br>Making useful things because the first version is never enough.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#work">See the builds <span aria-hidden="true">↘</span></a>
+              <a class="button button-quiet" href="https://github.com/Kaizy-Dev" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="hero-note"><span class="status-dot" aria-hidden="true"></span> No big promises. Just working software.</div>
+          </div>
+
+          <div class="hero-instrument" data-reveal data-delay="120" aria-label="Build telemetry display">
+            <div class="instrument-topline"><span>KAIZY / FLIGHT DECK</span><span>SYS. 026</span></div>
+            <div class="instrument-viewport">
+              <svg class="route-map" viewBox="0 0 620 500" role="img" aria-label="Abstract route map showing a build path">
+                <defs>
+                  <linearGradient id="route-stroke" x1="0" x2="1">
+                    <stop offset="0" stop-color="#4ab6ff" stop-opacity=".2" />
+                    <stop offset=".48" stop-color="#7fe4d0" />
+                    <stop offset="1" stop-color="#4ab6ff" stop-opacity=".25" />
+                  </linearGradient>
+                  <filter id="route-glow"><feGaussianBlur stdDeviation="4" result="blur" /><feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
+                </defs>
+                <path class="route-grid" d="M0 105h620M0 210h620M0 315h620M0 420h620M124 0v500M248 0v500M372 0v500M496 0v500" />
+                <path class="route-path" d="M42 402 C112 367 118 294 188 307 S278 381 332 274 S417 143 578 105" />
+                <path class="route-path route-path-secondary" d="M42 402 C142 452 203 407 257 349" />
+                <circle class="route-node route-node-start" cx="42" cy="402" r="7" />
+                <circle class="route-node" cx="188" cy="307" r="6" />
+                <circle class="route-node" cx="332" cy="274" r="6" />
+                <circle class="route-node route-node-end" cx="578" cy="105" r="9" />
+                <g class="route-label route-label-start"><text x="28" y="437">NOW</text><text x="28" y="453">LEARN / BUILD</text></g>
+                <g class="route-label route-label-end"><text x="525" y="75">NEXT</text><text x="525" y="91">GO FURTHER</text></g>
+              </svg>
+              <div class="instrument-center"><span class="center-crosshair">+</span><strong>MORE</strong><small>always another pass</small></div>
+              <div class="instrument-readout readout-a"><span>VECTOR</span><strong>01 / 02</strong></div>
+              <div class="instrument-readout readout-b"><span>MODE</span><strong>CURIOUS</strong></div>
+              <div class="instrument-readout readout-c"><span>UPTIME</span><strong data-clock>--:--:--</strong></div>
+            </div>
+            <div class="instrument-bottomline"><span>ROUTE LOCKED / DIRECTION CLEAR</span><span class="blink-label">● LIVE</span></div>
+          </div>
+        </section>
+
+        <div class="ticker" aria-label="Portfolio summary">
+          <div class="ticker-track">
+            <span>PUBLIC BUILDS <b>02</b></span><i aria-hidden="true">✳</i><span>LIVE LINKS <b>04</b></span><i aria-hidden="true">✳</i><span>NEXT AIM <b>MAJOR PROJECT</b></span><i aria-hidden="true">✳</i><span>PUBLIC BUILDS <b>02</b></span><i aria-hidden="true">✳</i><span>LIVE LINKS <b>04</b></span>
+          </div>
+        </div>
+
+        <section class="work-section section-pad" id="work" aria-labelledby="work-title">
+          <div class="section-heading" data-reveal>
+            <div><p class="eyebrow"><span class="eyebrow-line"></span> 01 / Flight deck</p><h2 id="work-title">Things I<br><em>actually built.</em></h2></div>
+            <p class="section-aside">Two live experiments. Both started as a question, then got a lot more involved.</p>
+          </div>
+
+          <div class="project-list">
+            <article class="project-card project-card-pulse" data-reveal>
+              <div class="project-topline"><span>BUILD 001 / HARDWARE LAB</span><span class="project-status"><i aria-hidden="true"></i> Live / finished</span></div>
+              <div class="project-visual">
+                <div class="visual-frame-label">LIVE PROJECT CAPTURE <span>01</span></div>
+                <img src="/assets/pulsepad-real.png" alt="PulsePad hardware lab interface showing the controller overview and quick introduction modal" loading="lazy">
+                <div class="visual-overlay"><span>REAL SITE / PULSEPADLAUNCH.VERCEL.APP</span><span>↗</span></div>
+              </div>
+              <div class="project-details">
+                <div class="project-title-block"><p class="project-kicker">Controller testing tool</p><h3>PulsePad</h3></div>
+                <p class="project-phrase">“You'll not know if your controller doesn't have drift, that's why PulsePad exists.”</p>
+                <p class="project-description">A browser-based hardware lab for checking gamepads, sticks, triggers and more. It started with one drifting controller and turned into a way to test the whole signal.</p>
+                <div class="project-meta"><span>Browser Gamepad API</span><span>Vercel</span><span>Public release repo</span></div>
+                <div class="project-links"><a class="text-link" href="https://pulsepadlaunch.vercel.app/" target="_blank" rel="noreferrer">Open PulsePad <span>↗</span></a><a class="text-link muted-link" href="https://github.com/Kaizy-Dev/pulsepad-downloads" target="_blank" rel="noreferrer">Release repo <span>↗</span></a></div>
+              </div>
+            </article>
+
+            <article class="project-card project-card-receipt" data-reveal data-delay="100">
+              <div class="project-topline"><span>BUILD 002 / BROWSER GAME</span><span class="project-status"><i aria-hidden="true"></i> Live / finished</span></div>
+              <div class="project-visual">
+                <div class="visual-frame-label">LIVE PROJECT CAPTURE <span>02</span></div>
+                <img src="/assets/receipt-game-real.png" alt="The Receipt Game landing screen with illustrated grocery artwork and start game button" loading="lazy">
+                <div class="visual-overlay"><span>REAL SITE / THERECEIPTGAME.VERCEL.APP</span><span>↗</span></div>
+              </div>
+              <div class="project-details">
+                <div class="project-title-block"><p class="project-kicker">Cumulative-rule puzzle</p><h3>The Receipt Game</h3></div>
+                <p class="project-phrase">“You came for milk, not homework.”</p>
+                <p class="project-description">A small browser game about building a shopping receipt while the rules keep getting stranger. A fun little way to kill time, then accidentally spend a while solving it.</p>
+                <div class="project-meta"><span>React / Next.js</span><span>Vercel</span><span>50 rules</span></div>
+                <div class="project-links"><a class="text-link" href="https://thereceiptgame.vercel.app/" target="_blank" rel="noreferrer">Play the game <span>↗</span></a><span class="text-link muted-link">No public repo</span></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="proof-section section-pad" aria-labelledby="proof-title">
+          <div class="section-heading compact-heading" data-reveal>
+            <div><p class="eyebrow"><span class="eyebrow-line"></span> 01.5 / Proof of build</p><h2 id="proof-title">Not a moodboard.<br><em>Working links.</em></h2></div>
+            <p class="section-aside">The details are the point. Here is what is verifiable from the projects themselves.</p>
+          </div>
+          <div class="proof-grid">
+            <article class="proof-card" data-reveal><span class="proof-index">A / 01</span><div class="proof-icon" aria-hidden="true">⌁</div><h3>Signals stay local.</h3><p>PulsePad reads controller, keyboard, mouse and microphone signals in the browser. Its public interface says the hardware data does not leave the computer.</p><span class="proof-tag">PULSEPAD / HARDWARE</span></article>
+            <article class="proof-card" data-reveal data-delay="80"><span class="proof-index">B / 02</span><div class="proof-icon" aria-hidden="true">50</div><h3>Rules keep stacking.</h3><p>The Receipt Game is built around satisfying 50 cumulative receipt rules, with classic, daily, speedrun and random ways to play.</p><span class="proof-tag">RECEIPT GAME / PUZZLE</span></article>
+            <article class="proof-card" data-reveal data-delay="160"><span class="proof-index">C / 03</span><div class="proof-icon" aria-hidden="true">↗</div><h3>Open enough to inspect.</h3><p>Both projects are live on Vercel. PulsePad also has a public release repository for its Windows build.</p><span class="proof-tag">VERCEL / GITHUB</span></article>
+          </div>
+        </section>
+
+        <section class="origin-section section-pad" id="origin" aria-labelledby="origin-title">
+          <div class="origin-orbit" aria-hidden="true"><span class="orbit-ring orbit-ring-one"></span><span class="orbit-ring orbit-ring-two"></span><span class="orbit-dot"></span><span class="orbit-label orbit-label-one">WHY</span><span class="orbit-label orbit-label-two">MAKE</span></div>
+          <div class="origin-copy" data-reveal><p class="eyebrow"><span class="eyebrow-line"></span> 02 / Origin story</p><h2 id="origin-title">It usually starts<br>with <em>“why not?”</em></h2><p>I was bored one day, looking around at different websites and projects, and started thinking: why not make my own game or some kind of system to kill boredom?</p><p>That question became real projects. One of the biggest origins was a controller with stick drift. I wanted to play Rocket League, so I researched how to fix it, fixed it, and then built PulsePad so I could test controllers myself.</p><p>I like programming and creating content too. My YouTube is inactive while school and projects take the front seat, but making things is still the part I keep coming back to.</p></div>
+          <aside class="origin-note" data-reveal data-delay="120"><span class="note-label">FIELD NOTE / 001</span><strong>Curiosity is a<br>perfectly valid<br>starting point.</strong><span class="note-footer">— kaizy_dude</span></aside>
+        </section>
+
+        <section class="more-section section-pad" aria-labelledby="more-title">
+          <div class="more-word" data-reveal aria-hidden="true">MORE<span>.</span></div>
+          <div class="more-copy" data-reveal data-delay="100"><p class="eyebrow"><span class="eyebrow-line"></span> 02.5 / Building philosophy</p><h2 id="more-title">The first working version<br>is just a <em>coordinate.</em></h2><p>More features. More experiments. More ideas. I keep pushing projects further instead of stopping at the first working version. Not for the checklist — because there is usually one more interesting thing to try.</p><div class="more-list"><span><b>01</b> ship the useful part</span><span><b>02</b> find the rough edge</span><span><b>03</b> push past it</span></div></div>
+        </section>
+
+        <section class="flight-section section-pad" id="flight-plan" aria-labelledby="flight-title">
+          <div class="section-heading" data-reveal><div><p class="eyebrow"><span class="eyebrow-line"></span> 03 / Current status</p><h2 id="flight-title">Flight plan:<br><em>still climbing.</em></h2></div><p class="section-aside">No dramatic launch announcement. Just a direction and the next thing to work toward.</p></div>
+          <div class="flight-plan" data-reveal>
+            <div class="flight-line" aria-hidden="true"><span class="flight-line-progress"></span><i class="flight-node node-now"></i><i class="flight-node node-next"></i><i class="flight-node node-long"></i></div>
+            <div class="flight-stop flight-stop-now"><span class="flight-code">NOW / 01</span><strong>Student</strong><p>Learning, shipping small projects, and making room for the next idea.</p><span class="flight-state">CURRENT POSITION</span></div>
+            <div class="flight-stop flight-stop-next"><span class="flight-code">NEXT / 02</span><strong>Software Engineer</strong><p>The role I am building toward: better systems, bigger scope, more things that work.</p><span class="flight-state">DESTINATION</span></div>
+            <div class="flight-stop flight-stop-long"><span class="flight-code">AIM / 03</span><strong>One major project</strong><p>Within the next 1–2 years, build something fully functional that can become genuinely successful.</p><span class="flight-state">LONG RANGE</span></div>
+          </div>
+        </section>
+
+        <section class="toolbox-section section-pad" aria-labelledby="toolbox-title">
+          <div class="toolbox-heading" data-reveal><p class="eyebrow"><span class="eyebrow-line"></span> 04 / Toolbox</p><h2 id="toolbox-title">Tools that made<br><em>the work real.</em></h2><p>Only the pieces visible in the projects — no résumé inflation.</p></div>
+          <div class="toolbox-grid" data-reveal data-delay="100">
+            <div class="toolbox-group"><span class="toolbox-label">01 / Frontend</span><ul><li>HTML / CSS / JavaScript</li><li>React / Next.js</li><li>Responsive UI</li></ul></div>
+            <div class="toolbox-group"><span class="toolbox-label">02 / Browser</span><ul><li>Gamepad API</li><li>Web Audio API</li><li>WebHID</li></ul></div>
+            <div class="toolbox-group"><span class="toolbox-label">03 / Ship</span><ul><li>Vercel deployments</li><li>GitHub releases</li><li>Browser-first products</li></ul></div>
+          </div>
+        </section>
+
+        <section class="contact-section section-pad" id="contact" aria-labelledby="contact-title">
+          <div class="contact-panel" data-reveal><div><p class="eyebrow"><span class="eyebrow-line"></span> 05 / Open channel</p><h2 id="contact-title">See what I<br><em>make next.</em></h2><p class="contact-copy">The best way to understand the work is to click through it. If you want to follow along, these are the two public channels I actually use.</p></div><div class="contact-links"><a class="contact-link" href="https://github.com/Kaizy-Dev" target="_blank" rel="noreferrer"><span>GitHub</span><small>code + releases</small><b>↗</b></a><a class="contact-link" href="https://guns.lol/kaizy_dude" target="_blank" rel="noreferrer"><span>Guns.lol</span><small>the other profile</small><b>↗</b></a></div></div>
+        </section>
+      </main>
+
+      <footer class="site-footer section-pad">
+        <a class="footer-brand" href="#top"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M7 7v26M7 20h10M17 20 30 7M17 20l14 13" /><path class="brand-mark-accent" d="M23 7h10v10" /></svg><span>KAIZY / Gael Franco</span></a>
+        <p>© 2026 Gael Franco / kaizy_dude. All rights reserved.</p>
+        <p class="footer-version">PORTFOLIO / V1.0<br><span>THINK AND MAKE.</span></p>
+      </footer>
+    </div>
+
+    <div class="command-backdrop" id="command-palette" role="dialog" aria-modal="true" aria-labelledby="command-title" hidden>
+      <div class="command-dialog">
+        <div class="command-head"><span id="command-title">Jump to</span><button class="command-close" type="button" aria-label="Close command menu" data-command-close>Esc</button></div>
+        <div class="command-list" role="listbox">
+          <a href="#work" role="option" data-command-link><span class="command-icon">01</span><span><strong>Work</strong><small>see the projects</small></span><kbd>↘</kbd></a>
+          <a href="#origin" role="option" data-command-link><span class="command-icon">02</span><span><strong>Origin</strong><small>why I started building</small></span><kbd>↘</kbd></a>
+          <a href="#flight-plan" role="option" data-command-link><span class="command-icon">03</span><span><strong>Flight plan</strong><small>where this is going</small></span><kbd>↘</kbd></a>
+          <a href="https://github.com/Kaizy-Dev" target="_blank" rel="noreferrer" role="option"><span class="command-icon">↗</span><span><strong>GitHub</strong><small>open the public code channel</small></span><kbd>↗</kbd></a>
+        </div>
+        <div class="command-foot"><span>Use <kbd>↑</kbd><kbd>↓</kbd> to scan</span><span><kbd>Esc</kbd> close</span></div>
+      </div>
+    </div>
+
+    <script src="/main.js" defer></script>
+  </body>
+</html>

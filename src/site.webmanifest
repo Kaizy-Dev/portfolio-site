@@ -1,0 +1,10 @@
+{
+  "name": "KAIZY / Gael Franco",
+  "short_name": "KAIZY",
+  "description": "Think and Make. A personal build log by Gael Franco.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07111f",
+  "theme_color": "#07111f",
+  "icons": [{"src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}]
+}

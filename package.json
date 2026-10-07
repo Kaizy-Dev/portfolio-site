@@ -1,0 +1,16 @@
+{
+  "name": "kaizy-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "KAIZY / Gael Franco personal portfolio",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/preview.mjs",
+    "test": "node --test",
+    "check": "npm run build && npm test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
