@@ -136,7 +136,7 @@ test('a local build warns instead of inventing a deployment URL', async () => {
   let warning = '';
   await build({
     outputRoot: localDist,
-    siteUrl: undefined,
+    siteUrl: '',
     logger: { warn(message) { warning = message; }, log() {} }
   });
   assert.match(warning, /SITE_URL.*not set/i);
